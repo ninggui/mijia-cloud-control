@@ -2,7 +2,7 @@
 
 > 2026-08-19 全量拉取。分类依据：localip 网段 + ssid + parent_id 网关映射。
 
-## <小区名>（A房 · 192.168.31.x · 默认控制目标）
+## A 房（默认控制目标）
 
 ### WiFi 直连 26台
 | 设备 | model | IP |
@@ -37,7 +37,7 @@
 ### 网关子设备 7台（parent_id=<DID>，ssid=IoT）
 客卫传感器(lumi.sensor_motion.v2)、茶几小开关、书桌小开关、餐桌小开关、卧室床头小开关(lumi.sensor_switch.v2)、阳台电蚊香液(lumi.plug.v1)、书桌电表(lumi.plug.v1)
 
-## B房（B房 · 192.168.0.x · 禁操作）
+## B 房（只读，禁操作）
 
 ### WiFi 直连 10台
 | 设备 | model | IP |

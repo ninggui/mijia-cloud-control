@@ -177,7 +177,7 @@ lemesh.light.wy02（did <DID>）相关属性：
 - 小米路由器 6500 Pro = `xiaomi.router.rd08`，**内置中枢网关**（用户家 <LAN_IP> 主路由，已具备本地化条件）
 - rd15 = 小米路由器 BE3600 2.5G
 - 独立中枢网关 model 为 xiaomi.hub.*；小爱音箱 Pro 可作中枢从网关
-- **容器网络限制（根因已更正：不是 Docker，是异地部署）**：NAS 与家庭网络不在同一地点 → 内网 192.168.31.x 全部不可达（路由器/摄像头/音箱本地 IP 超时），**改 host 网络/macvlan 无效**。→ 本地直连路线（miIO 局域网协议、xiaomusic 推流、摄像头 RTSP）走不通，只能走云 API；要本地化必须在家里放常开设备再与 NAS 组隧道。设备本地 IP 与 miIO token 在 `/home/device_list` 响应里（`localip`/`token` 字段，属凭据，勿外泄）
+- **容器网络限制（根因已更正：不是 Docker，是异地部署）**：NAS 与家庭网络不在同一地点 → 内网 <LAN_A> 全部不可达（路由器/摄像头/音箱本地 IP 超时），**改 host 网络/macvlan 无效**。→ 本地直连路线（miIO 局域网协议、xiaomusic 推流、摄像头 RTSP）走不通，只能走云 API；要本地化必须在家里放常开设备再与 NAS 组隧道。设备本地 IP 与 miIO token 在 `/home/device_list` 响应里（`localip`/`token` 字段，属凭据，勿外泄）
 
 ## 登录流程（凭据过期时，30天一续）
 
