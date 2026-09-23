@@ -1,5 +1,8 @@
 ---
 name: mijia-cloud-control
+slug: mijia-cloud-control
+displayName: 米家云API控制
+version: 1.2.0
 description: 米家智能家居云API控制（2026实测）。触发：控制米家设备、查设备状态、智能家居、开灯关灯、调空调窗帘。
 ---
 

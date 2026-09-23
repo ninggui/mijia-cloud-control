@@ -53,10 +53,10 @@
 | 触屏音箱 | xiaomi.wifispeaker.lx04 | <LAN_IP> |
 | 网关 | lumi.acpartner.v3 | <LAN_IP>（did=<DID>） |
 
-### 网关子设备 7台（parent_id=<DID>，ssid=<SSID_B>）
+### 网关子设备 7台（parent_id=<DID>，ssid=<WiFi_B>）
 主卧灯、厕所灯、客厅灯、走廊灯(lumi.ctrl_neutral2.v1)、主卧床头小开关、阳台小开关(lumi.sensor_switch.v2)、阳台门开关(lumi.sensor_magnet.v2，离线)
 
-## 无 parent 蓝牙mesh 31台（推断属<小区名>，待用户确认）
+## 无 parent 蓝牙mesh 31台（推断属A房，待用户确认）
 
 | 类别 | 数量 | 设备 |
 |------|------|------|
@@ -69,6 +69,6 @@
 
 1. `localip` 为空或公网IP（111.183.83.x/171.83.41.x/58.48.206.x）= 网关子设备/蓝牙mesh，不能靠网段分
 2. `parent_id` 是最可靠的归属信号（网关 did 直接映射房间）
-3. `ssid` 兜底：信号满满=<小区名>、<SSID_B>=B房、IoT=<小区名>（米家网关子设备）
+3. `ssid` 兜底：信号满满=A房、<WiFi_B>=B房、IoT=A房（米家网关子设备）
 4. `family_id` 全部为 0，无区分度
 5. 快速分组脚本：`/opt/data/group_devices.py`（`/opt/data/mijia_venv/bin/python3` 运行）

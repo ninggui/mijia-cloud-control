@@ -32,7 +32,7 @@
 ## 部署步骤草案（待用户确认后执行）
 
 1. 绿联 NAS Docker 起 `homeassistant/home-assistant` 容器（/config 卷持久化，≥2G 内存、10G 空间）
-2. HACS 装官方集成，米家账号 OAuth 登录，**只导入 A 房（<小区名>）设备，B 房（B房）不碰**（用户红线）
+2. HACS 装官方集成，米家账号 OAuth 登录，**只导入 A 房（A房）设备，B 房（B房）不碰**（用户红线）
 3. 确认中枢网关固件 ≥3.4.0_000；米家自动化逐个切本地执行
 4. Docker 起 ha-mcp（有官方 Docker/HA add-on），Hermes config.yaml 注册 MCP server
 5. 设备清单审计 → 补全自动化方案 → 用户确认 → 写入

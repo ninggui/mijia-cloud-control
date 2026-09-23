@@ -9,7 +9,7 @@ import sys, time
 sys.path.insert(0, '/opt/data/skills/@clawhub_lanlan314/xiaomi-miot-lan')
 from mijia_api import MijiaCloud
 
-DID = '<DID>'          # 阳台灯（领普单键开关，蓝牙mesh，<小区名>）
+DID = '<DID>'          # 阳台灯（领普单键开关，蓝牙mesh，A房）
 ON = 0.66                  # 普通音亮秒（BPM90 一拍）
 ON_LONG = 1.32             # 延音亮秒（两拍）
 GAP = 0.25                 # 音符间灭秒
